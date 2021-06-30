@@ -39,7 +39,7 @@ if [ "$(id -u)" = "0" ]; then
 fi
 clear
 echo;
-#(apt update;apt install wget busybox -y;wget -O $TMPDIR/metasploit.txt https://raw.githubusercontent.com/remo7777/Termux-Metasploit/master/logo.txt) &> /dev/null
+#(apt update;apt install wget busybox -y;wget -O $TMPDIR/metasploit.txt https://raw.githubusercontent.com/netslutter/Termux-Metasploit/master/logo.txt) &> /dev/null
 #cat $TMPDIR/metasploit.txt;
 echo;
 echo -e "\e[32mDependency packages install\e[0m"
@@ -113,7 +113,7 @@ if [ -z "$(psql -l | grep msf_database)" ]; then
 fi
 rm -rf $PREFIX/bin/{msfconsole,msfd,msfrpc,msfrpcd,msfvenom} > /dev/null 2>&1 || true
 # download file from git msfconsole.sh
-#wget -O "$TMPDIR"/msfconsole.sh https://raw.githubusercontent.com/remo7777/Termux-Metasploit/master/msfconsole.sh
+#wget -O "$TMPDIR"/msfconsole.sh https://raw.githubusercontent.com/netslutter/Termux-Metasploit/master/msfconsole.sh
 # patch
 # Wrapper.
 install -Dm700 $TMPDIR/msfconsole \
