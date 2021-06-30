@@ -1,4 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
+
+apt update && apt upgrade -y; apt install git -y; git clone https://github.com/remo7777/Termux-Metasploit;cd Termux-Metaspl*;git pull
 set -e
 export PREFIX=/data/data/com.termux/files/usr
 export TMPDIR=$PREFIX/tmp
